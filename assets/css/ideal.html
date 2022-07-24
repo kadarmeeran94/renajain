@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimalgewicht Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Ideal weight calculator <br class="hide"> (Creff formula)</h1>
+
+        <div class="container">
+            <form action="">
+                <div class="input-group1">
+                    <label for="">Body height</label>
+                    <input type="number" name="" id="height" placeholder="Please give here your height in cm">
+                </div>
+                <div class="input-group2">
+                    <label for="position">Age</label>
+                    <input type="number" name="" id="age" placeholder="Please give here your age">
+                </div>
+
+
+
+ <!--radio buttons-->
+                <div class="radio-group1">                 
+  
+                    <label class="radio-label">
+                        <input type="radio" id="normalBody" name="bodyBuilt" checked/>
+                        <i class="form-radio-button"></i>
+                        <span>Average body</span>
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" id="slimBody" name="bodyBuilt"/>
+                        <!-- <i class="form-radio-button"></i> -->
+                        <span>Slim body</span>
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" id="broadBody" name="bodyBuilt"/>
+                        <!-- <i class="form-radio-button"></i> -->
+                        <span>Broad built people</span>
+                    </label>
+                </div>
+            </form>
+            <button onclick="calculate()">Calculate</button>
+
+
+                <!-- <h2>Result</h2> -->
+                <p>Your ideal weight is: <span id="result"></span></p>
+
+        
+        </div>
+    </main>
+    <script>
+        const height = document.getElementById("height")
+const age = document.getElementById("age")
+const normalBody = document.getElementById('normalBody')
+const slimBody = document.getElementById('slimBody')
+const broadBody = document.getElementById('broadBody')
+const result = document.getElementById('result')
+
+
+
+
+
+const calculate = () => {
+    console.log("working");
+    console.log(height.value);
+    console.log(age.value);
+    console.log(normalBody.value);
+    console.log(slimBody.value);
+    console.log(broadBody.value);
+    result.innerHTML =""  //para vaciar las frases del caso anterior
+
+    if (normalBody.checked) {
+        let weight1 = [(height.value - 100) + (age.value / 10)] * 0.9
+        result.innerHTML += `${Math.round(weight1)} Kg.`
+    } else if (slimBody.checked) {
+        let weight2 = [(height.value - 100) + (age.value / 10)] * 0.9 * 0.9
+        result.innerHTML += `${Math.round(weight2)} Kg.`
+    } else {
+        let weight3 = [(height.value - 100) + (age.value / 10)] * 0.9 * 1.1
+        result.innerHTML += `${Math.round(weight3)}Kg.`
+    }
+}
+calculate()
+
+
+
+</script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
