@@ -1777,16 +1777,6 @@ position: absolute;
     content: "• ";
     color: rgb(255, 187, 0);
 }
-
-
-
-
-.bmr__header {
-        background-color: yellow;
-    display: inline-block;
-    width: 30%;
-    padding: 15px;
-}
     
 }
 #height, #weight {
@@ -1800,7 +1790,7 @@ position: absolute;
     margin-top: 25px;
 }
 
-#results{
+#results, #result{
     font-size: 35px;
     margin-left: 90px;
     margin-top: 20px;
@@ -1824,9 +1814,7 @@ position: absolute;
     padding-top: 25px;
 }
 .bmi__header{
-        display: inline-block;s
-     width: 85%;
-    padding: 15px;
+
 }
 .calculator{
     padding: 40px;
@@ -1842,16 +1830,17 @@ font-size: 2.8rem;
     margin-bottom: 10px;
 }
 .calculator__content{
-    display: inline-flex;
     width: 100%;
 }
 .calculator__first, .calculator__second, .calculator__third{
-    width: 30%;
+width: 27%;
     font-size: 1.2rem;
     color: #91969c;
     line-height: 1.75rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
+    float: left;
+    padding: 2%;
 }
 #height1, #weight1, #height, #age, #exercise, #gender11, #age11, #weight11, #height11, #fat11, #bmi11{
     outline: none;
@@ -1883,6 +1872,19 @@ font-size: 2.8rem;
     letter-spacing: 0.08313rem;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.bmi__header h1, .ideal__header h1, .bmr__header h1{
+      font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.10rem;
+    color: #f37a75;
+    border-bottom: 1px solid #f37a75;
+    display: table;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    margin-bottom: 5%;
 }
 
 

@@ -597,4 +597,7 @@ padding-left:0;
 {
   transform: none;
 }
+.calculator__first, .calculator__second, .calculator__third{
+width: 100%;
+    }
 }
