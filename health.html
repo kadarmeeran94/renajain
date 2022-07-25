@@ -24,7 +24,7 @@
           <div id="menuToggle">
               <input type="checkbox" />
                   <span></span>
-                  <span></span> <li><a href="process.html" class="footer__menu"></a></li>
+                  <span></span> 
                   <span></span>
              </div>
       <div class="header__navbar" >
@@ -59,121 +59,114 @@
 <!-- banner section ends here-->
 
 
-
-
-
-
-
-
-<div class="calculator">
-  <h1 class="calculator__heading">HEALTH CALCULATORS</h1>
-    <div class="calculator__content">
-
-      <div class="calculator__first">
-       <div class="bmi__header">
-        <h1>Calculate your BMI Calculator</h1>
-        <form id="form1">
-        <p><label>Height in CM: </label><input type="text" id="height1"></p>
-        <p><label>Weight in KG: </label><input type="text" id="weight1"></p>
-        <button class="bmi__calculate">Calculate</button>
-        <div id="results"></div>
-        <div id="weight-guide">
-        <h3>BMI Weight Guide</h3>
-        <p>Under Weight = Less than 18.6</p>
-        <p>Normal Range = 18.6 and 24.9</p>
-        <p>Overweight = Greater than 24.9</p>
-        </div>
-        </form> 
-    </div>
-          </div>
-            <div class="calculator__second">
-              <div class="ideal__header">
-       <h1>Ideal weight calculator </h1>
-
-        <div class="container">
-            <form action="">
-                <div class="input-group1">
-                    <label for="">Body height</label>
-                    <input type="number" name="" id="height" placeholder="Please give here your height in cm">
-                </div>
-                <div class="input-group2">
-                    <label for="position">Age</label>
-                    <input type="number" name="" id="age" placeholder="Please give here your age">
-                </div>
- <!--radio buttons-->
-                <div class="radio-group1">                 
   
+    <div class="calculator__content">
+      <h1 class="calculator__heading">HEALTH CALCULATORS</h1>
+        <div class="calculator__first">
+              <div class="bmi__header">
+                  <h1> BMI </h1>
+                  <form id="form1">
+                    <input type="text"  placeholder="Height in CM"  id="height1">
+                    <input type="text"  placeholder="Weight in KG"  id="weight1">
+                  <button class="bmi__calculate">Calculate</button>
+                  <div id="results"></div>
+                  <div id="weight-guide">
+                  <h3>BMI Weight Guide</h3>
+                  <p>Under Weight = Less than 18.6</p>
+                  <p>Normal Range = 18.6 and 24.9</p>
+                  <p>Overweight = Greater than 24.9</p>
+                  </div>
+                  </form> 
+              </div>
+</div></div>
+
+
+      <div class="calculator__second">
+              <div class="ideal__header">
+                <h1>Ideal weight  </h1>
+                  <div class="container">
+                    <form action="">
+                    <div class="input-group1">
+                    <input type="text"  placeholder="Height in CM"  id="height">
+                    </div>
+                    <div class="input-group2">
+                     <input type="number"  placeholder="Age"  id="age">
+                    </div>
+                    <div class="radio-group1">                 
                     <label class="radio-label">
-                        <input type="radio" id="normalBody" name="bodyBuilt" checked/>
-                        <i class="form-radio-button"></i>
-                        <span>Average body</span>
+                    <input type="radio" id="normalBody" name="bodyBuilt" checked/>
+                    <i class="form-radio-button"></i>
+                    <span>Average body</span>
                     </label>
 
                     <label class="radio-label">
-                        <input type="radio" id="slimBody" name="bodyBuilt"/>
-                        <!-- <i class="form-radio-button"></i> -->
-                        <span>Slim body</span>
+                    <input type="radio" id="slimBody" name="bodyBuilt"/>
+                    <!-- <i class="form-radio-button"></i> -->
+                    <span>Slim body</span>
                     </label>
 
                     <label class="radio-label">
-                        <input type="radio" id="broadBody" name="bodyBuilt"/>
-                        <!-- <i class="form-radio-button"></i> -->
-                        <span>Broad built people</span>
+                    <input type="radio" id="broadBody" name="bodyBuilt"/>
+                    <!-- <i class="form-radio-button"></i> -->
+                    <span>Broad built people</span>
                     </label>
-                </div>
-            </form>
-            <button class="ideal__calculate" onclick="calculate()">Calculate</button>
+                    </div>
+                    </form>
+                    <button class="ideal__calculate" onclick="calculate()">Calculate</button>
+                      <!-- <h2>Result</h2> -->
+                    <p>Your ideal weight is: <span id="result"></span></p>
+                  </div>
+              </div>
+</div>
 
-
-                <!-- <h2>Result</h2> -->
-                <p>Your ideal weight is: <span id="result"></span></p>
-        </div>
-    </div>
-
-            </div>
-          <div class="calculator__third">
-             <div class="bmi__header">
-    <h2>Calculate your BMR</h2>
-    <div class="fakeimg" >
-            <form name="bmiForm" class="form">
-              <label for="exercise">I Exercise</label><select name="i exercise" id="exercise">
-                            <option value="1">Very Little</option>
-                            <option value="2">1-3 Times per week</option>
-                            <option value="3">3-5 Times per week</option>
-                            <option value="4">6-7 Times per week</option>
-                            <option value="5">7 Times</option>
+                <div class="calculator__third">
+                    <div class="bmr__header">
+                      <h1>BMR</h1>
+                      <div class="fakeimg" >
+                          <form name="bmiForm" class="form">
+                          <label for="exercise" placeholder="Weight in KG">I Exercise</label><select name="i exercise" id="exercise">
+                          <option value="1">Very Little</option>
+                          <option value="2">1-3 Times per week</option>
+                          <option value="3">3-5 Times per week</option>
+                          <option value="4">6-7 Times per week</option>
+                          <option value="5">7 Times</option>
                           </select>
                           <br> <br>  
                           Gender <select name="gender" id="gender11">
-                                <option value="male"> Male</option>
-                                <option value="female">Female</option>
-                              </select>
-                              <br><br>
-                              Age: <input type="text" name="age" id="age11" size="10">
-                <br><br>
-                Your Weight: <input type="text" name="weight" size="10" id="weight11"> <select type="multiple" name="weightunits">
-                        <option value="kilos" selected="selected">kilos</option>
-                        <option value="pounds">pounds</option>
-                    </select><br><br>
-                Your Height: <input type="text" name="height" id="height11"size="10">
-                <select type="multiple" name="heightunits">
-                        <option value="cm" selected="selected">cm</option>
-                        <option value="inches">inches</option>
-                    </select>
-                    <br><br>
-                My Fat %: <input type="text" id="fat11" name="Fat(%)"><br><br>
-                <input type="button" value="Calculate BMI"  class="bmr__calculate" onClick="calculateBmi()"><br />
-               <br><br/>
-                <strong>Your BMI:</strong> <input type="text" name="bmi" id="bmi11"size="10"><br />
-                <input class="rest__calculate" type="reset" value="Reset" />
-            </form></div></div>
-                </div>
-          </div>
-        </div>
-      </div>
+                          <option value="male"> Male</option>
+                          <option value="female">Female</option>
+                          </select>
+                          <br><br>
+                          <input type="number" name="age" id="age11"   placeholder="Age" size="10">
+                          <br><br>
+                          <input type="number" name="weight" size="10" id="weight11"placeholder="Weight in KG" > <select type="multiple" name="weightunits">
+                          <option value="kilos" selected="selected">kilos</option>
+                          <option value="pounds">pounds</option>
+                          </select><br><br>
+                          <input type="number" name="height" id="height11"size="10" placeholder="Height in CM" >
+                          <select type="multiple" name="heightunits">
+                          <option value="cm" selected="selected">cm</option>
+                          <option value="inches">inches</option>
+                          </select>
+                          <br><br>
+                          My Fat %: <input type="text" id="fat11" name="Fat(%)"><br><br>
+                          <input type="button" value="Calculate BMI"  class="bmr__calculate" onClick="calculateBmi()"><br />
+                          <br><br/>
+                          <strong>Your BMI:</strong> <input type="text" name="bmi" id="bmi11"size="10"><br />
+                          <input class="rest__calculate" type="reset" value="Reset" />
+                          </form>
+                      </div>
+                  </div>
+              </div>
+
     </div>
-      
-  </div>
+
+
+
+</div>
+</div>
+</div>
+
     
 
     
