@@ -600,4 +600,16 @@ padding-left:0;
 .calculator__first, .calculator__second, .calculator__third{
 width: 100%;
     }
+.water{
+    height: 76px;
+    width: 50%;
+    margin-left: 25%;
+}
+.water span{
+    font-size: 14px;
+}
+.modal-content, .modal-content1, .modal-content2{
+    width: 75%;
+}
+
 }
