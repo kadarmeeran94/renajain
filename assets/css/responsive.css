@@ -171,7 +171,7 @@ body{
   -ms-user-select: none; 
   user-select: none; 
 }
-.section3__contain1, .section4__content h1, .section5__content h1, .about__contain1, .weare__content h1, .services__details, .permanent__content1, .contract__content1, .bulk__content1, .process__contain, .whyus__details {
+.section3__contain1, .section4__content h1, .section5__content h1, .about__contain1, .weare__content h1, .services__details, .permanent__content1, .contract__content1, .bulk__content1, .process__contain, .whyus__details, .calculator__heading {
     font-size: 1.5rem;
     line-height: 1.7rem;
 }
