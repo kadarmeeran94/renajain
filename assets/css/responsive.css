@@ -171,7 +171,7 @@ body{
   -ms-user-select: none; 
   user-select: none; 
 }
-.section3__contain1, .section4__content h1, .section5__content h1, .about__contain1, .weare__content h1, .services__details, .permanent__content1, .contract__content1, .bulk__content1, .process__contain, .whyus__details, .calculator__heading {
+.section3__contain1, .section4__content h1, .section5__content h1, .about__contain1, .weare__content h1, .services__details, .permanent__content1, .contract__content1, .bulk__content1, .process__contain, .whyus__details, .calculator__heading, .video_header {
     font-size: 1.5rem;
     line-height: 1.7rem;
 }
@@ -521,7 +521,7 @@ padding-left:0;
   -webkit-user-select: none;
   user-select: none;
   float: left;
-  padding-top: 10px;
+  padding-top: 18px;
   padding-left: 10px;
 }
 #menuToggle input
@@ -611,5 +611,112 @@ width: 100%;
 .modal-content, .modal-content1, .modal-content2{
     width: 75%;
 }
+.consult_banner__text {
+ position: absolute;
+    top: 32%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 400;
+    COLOR: #8e7164;
+}
+.consult_banner__text1 {
+    position: absolute;
+    top: 53%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 500;
+    COLOR: #8e7164;
+}
+.consult_banner__button {
+    position: absolute;
+    top: 42%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+    background-color: #e2aa33;
+    border-radius: 18px;
+    letter-spacing: 0.08313rem;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.consult_banner__button1 {
+    position: absolute;
+    top: 62%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    outline: none;
+    background-color: #e2aa33;
+    border-radius: 18px;
+    letter-spacing: 0.08313rem;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contactbanner__img {
+    width: 100%;
+    height: 350px;
+}
+.testim .wrap {
+    position: relative;
+    /* width: 100%; */
+    /* max-width: 1020px; */
+    padding: 40px 0px;
+    margin: auto;
+}
+.testim .cont div h2 {
+    color: green;
+    font-size: 16px;
+    margin: 15px 0;
+}
+.testim .cont div p {
+    color: #333;
+    width: 75%;
+    margin: auto;
+    font-size: 14px;
+    color: #91969c;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+}
+.testim .arrow.left {
+    left: 20px;
+}
+.testim .arrow.right {
+    right: 20px;
+}
+.testim .cont div .img img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    }
+.videoframe {
+    width: 70%;
+    margin: 0 auto;
+}
+video{
+height: 300px;
+width: 300px;
+}
+div#slider figure img {
+   height: 350px;
+}
+.consult__banner__img{
+    height: 350px;
+}
+
 
 }
