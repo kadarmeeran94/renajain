@@ -612,27 +612,29 @@ width: 100%;
     width: 75%;
 }
 .consult_banner__text {
- position: absolute;
-    top: 32%;
-    left: 23%;
+position: absolute;
+    top: 45%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     COLOR: #8e7164;
+    font-family: 'Open Sans', sans-serif;
 }
 .consult_banner__text1 {
-    position: absolute;
-    top: 53%;
-    left: 21%;
+position: absolute;
+    top: 65%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     COLOR: #8e7164;
+    font-family: 'Open Sans', sans-serif;
 }
 .consult_banner__button {
     position: absolute;
-    top: 42%;
-    left: 27%;
+    top: 56%;
+    left: 30%;
     transform: translate(-50%, -50%);
     border: none;
     text-align: center;
@@ -648,9 +650,9 @@ width: 100%;
     font-weight: bold;
 }
 .consult_banner__button1 {
-    position: absolute;
-    top: 62%;
-    left: 26%;
+ position: absolute;
+    top: 75%;
+    left: 30%;
     transform: translate(-50%, -50%);
     border: none;
     text-align: center;
